@@ -41,7 +41,7 @@ const Navigation = () => {
             href="#"
             className="text-2xl font-bold bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent"
           >
-            PK
+            M
           </a>
 
           {/* Desktop Navigation */}
@@ -50,14 +50,18 @@ const Navigation = () => {
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className="text-foreground/80 hover:text-primary transition-smooth font-medium"
+                className="relative group text-foreground/80 hover:text-primary transition-smooth font-medium"
               >
-                {link.label}
+                <span>{link.label}</span>
+                <span
+                  aria-hidden
+                  className="absolute -bottom-1 left-0 h-0.5 w-0 bg-primary transition-all duration-300 group-hover:w-full"
+                />
               </button>
             ))}
             <Button
               onClick={() => scrollToSection("#contact")}
-              className="bg-primary hover:bg-primary-dark"
+              className="bg-primary hover:bg-primary-dark btn-gradient"
             >
               Let's Connect
             </Button>

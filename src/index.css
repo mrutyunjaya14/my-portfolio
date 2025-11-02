@@ -2,89 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 215 20% 20%;
+    /* Base Theme — Elegant Indigo + Teal */
+    --background: 0 0% 99%;
+    --foreground: 230 15% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 215 20% 20%;
+    --card-foreground: 230 15% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 20% 20%;
+    --popover-foreground: 230 15% 15%;
 
-    --primary: 190 80% 45%;
+    --primary: 262 80% 55%;           /* Violet / Indigo */
     --primary-foreground: 0 0% 100%;
-    
-    --primary-light: 190 70% 55%;
-    --primary-dark: 190 85% 35%;
+    --primary-light: 260 80% 65%;
+    --primary-dark: 260 85% 45%;
 
-    --secondary: 215 20% 96%;
-    --secondary-foreground: 215 20% 20%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 230 15% 20%;
 
-    --muted: 215 20% 96%;
-    --muted-foreground: 215 15% 45%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 230 10% 45%;
 
-    --accent: 190 70% 92%;
-    --accent-foreground: 190 80% 30%;
+    --accent: 180 60% 40%;            /* Teal accent */
+    --accent-foreground: 180 30% 98%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 58%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 215 15% 88%;
-    --input: 215 15% 88%;
-    --ring: 190 80% 45%;
+    --border: 230 10% 86%;
+    --input: 230 10% 86%;
+    --ring: 262 80% 55%;
 
     --radius: 0.75rem;
+
+    /* 🎨 Modern Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(199, 73%, 46%) 0%, hsl(262, 63%, 52%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(260 30% 98%) 100%);
     
-    /* Portfolio-specific tokens */
-    --gradient-hero: linear-gradient(135deg, hsl(190, 80%, 45%) 0%, hsl(210, 75%, 55%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0, 0%, 100%) 0%, hsl(190, 70%, 98%) 100%);
-    --shadow-soft: 0 4px 20px -2px hsl(190, 80%, 45%, 0.1);
-    --shadow-hover: 0 12px 40px -4px hsl(190, 80%, 45%, 0.2);
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    /* 🌙 Shadows & Transitions */
+    --shadow-soft: 0 6px 24px -6px hsl(262 70% 45% / 0.12);
+    --shadow-hover: 0 14px 40px -6px hsl(262 80% 55% / 0.25);
+    --transition-smooth: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    --background: 215 30% 10%;
+    --background: 230 25% 10%;
     --foreground: 0 0% 95%;
 
-    --card: 215 25% 12%;
+    --card: 230 25% 14%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 215 25% 12%;
+    --popover: 230 25% 14%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 190 75% 50%;
-    --primary-foreground: 215 30% 10%;
-    
-    --primary-light: 190 70% 60%;
-    --primary-dark: 190 80% 40%;
+    --primary: 262 80% 60%;
+    --primary-foreground: 230 25% 10%;
+    --primary-light: 260 80% 70%;
+    --primary-dark: 260 80% 50%;
 
-    --secondary: 215 20% 18%;
+    --secondary: 230 25% 18%;
     --secondary-foreground: 0 0% 95%;
 
-    --muted: 215 20% 18%;
-    --muted-foreground: 215 10% 60%;
+    --muted: 230 25% 18%;
+    --muted-foreground: 230 10% 65%;
 
-    --accent: 190 70% 20%;
-    --accent-foreground: 190 75% 70%;
+    --accent: 180 70% 40%;
+    --accent-foreground: 180 25% 90%;
 
-    --destructive: 0 62.8% 50%;
+    --destructive: 0 62% 52%;
     --destructive-foreground: 0 0% 95%;
 
-    --border: 215 20% 22%;
-    --input: 215 20% 22%;
-    --ring: 190 75% 50%;
-    
-    --gradient-hero: linear-gradient(135deg, hsl(190, 75%, 35%) 0%, hsl(210, 70%, 45%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(215, 25%, 12%) 0%, hsl(190, 70%, 15%) 100%);
-    --shadow-soft: 0 4px 20px -2px hsl(190, 75%, 50%, 0.15);
-    --shadow-hover: 0 12px 40px -4px hsl(190, 75%, 50%, 0.25);
+    --border: 230 25% 25%;
+    --input: 230 25% 25%;
+    --ring: 262 80% 60%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(262 80% 45%) 0%, hsl(280 75% 50%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(230 25% 12%) 0%, hsl(260 30% 18%) 100%);
+    --shadow-soft: 0 6px 24px -6px hsl(262 75% 55% / 0.2);
+    --shadow-hover: 0 16px 48px -8px hsl(262 75% 55% / 0.3);
   }
 }
 
@@ -95,9 +92,9 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Inter', 'Poppins', 'Segoe UI', sans-serif;
   }
-  
+
   html {
     scroll-behavior: smooth;
   }
@@ -107,24 +104,72 @@ All colors MUST be HSL.
   .gradient-hero {
     background: var(--gradient-hero);
   }
-  
+
   .gradient-card {
     background: var(--gradient-card);
   }
-  
+
   .shadow-soft {
     box-shadow: var(--shadow-soft);
   }
-  
+
   .shadow-hover {
     box-shadow: var(--shadow-hover);
   }
-  
+
   .transition-smooth {
     transition: var(--transition-smooth);
   }
-  
+
   .section-padding {
-    @apply py-20 md:py-28 px-6 md:px-12 lg:px-20;
+    /* tighter vertical rhythm on small screens, more generous on larger */
+    @apply py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 lg:px-20;
+  }
+
+  /* 🎯 Buttons */
+  .btn-gradient {
+    background: linear-gradient(90deg, hsl(280, 44%, 44%), hsl(280 75% 60%), hsl(180 60% 45%));
+    background-size: 300% 300%;
+    @apply text-primary-foreground font-semibold;
+    animation: gradient-shift 8s ease infinite;
+  }
+
+  .btn-gradient:hover {
+    filter: brightness(1.05);
+  }
+
+  /* ✨ Navigation underline animation */
+  .nav-underline {
+    position: relative;
+  }
+
+  .nav-underline::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: hsl(var(--primary));
+    transition: width 0.3s ease;
+  }
+
+  .nav-underline:hover::after {
+    width: 100%;
+  }
+
+  /* 💫 Accent glow for hover rings */
+  .accent-ring {
+    box-shadow: 0 8px 20px -6px hsl(262 80% 55% / 0.45);
+  }
+
+  /* 🌈 Keyframes */
+  @keyframes gradient-shift {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
   }
 }

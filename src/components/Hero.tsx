@@ -1,6 +1,6 @@
 import { Download, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import profilePhoto from "@/assets/profile-photo.jpg";
+import profilePhoto from "@/assets/Profile-photo.png";
 import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-[70vh] md:min-h-screen flex items-center justify-center overflow-hidden"
       style={{
         backgroundImage: `url(${heroBackground})`,
         backgroundSize: "cover",
@@ -32,16 +32,16 @@ const Hero = () => {
       ></div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-20 md:py-32">
+  <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-12 md:py-28">
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
           {/* Profile Image */}
           <div className="flex-shrink-0 animate-fade-in">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-light rounded-full blur-2xl opacity-30 animate-float"></div>
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-light rounded-full blur-2xl opacity-30 animate-float transition-smooth group-hover:opacity-70"></div>
               <img
                 src={profilePhoto}
-                alt="Pintu Kumar - Data Scientist"
-                className="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-hover border-4 border-primary/20"
+                alt="Mrutyunjaya Beura - Data Scientist"
+                className="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-hover border-4 border-primary/20 transform transition-smooth group-hover:scale-105"
               />
             </div>
           </div>
@@ -50,8 +50,8 @@ const Hero = () => {
           <div className="flex-1 text-center md:text-left space-y-6 animate-fade-in-up">
             <div>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4">
-                <span className="bg-gradient-to-r from-primary via-primary-light to-primary bg-clip-text text-transparent">
-                  Pintu Kumar
+                <span className="bg-gradient-to-r from-primary via-primary-light to-primary bg-clip-text text-transparent animate-gradient-shift">
+                  Mrutyunjaya
                 </span>
               </h1>
               <h2 className="text-2xl md:text-3xl text-muted-foreground font-medium mb-4">
@@ -64,13 +64,15 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+               <a href="/Data_resume.pdf" download>
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary-dark text-primary-foreground shadow-soft hover:shadow-hover transition-smooth"
+                className="btn-gradient shadow-soft hover:shadow-hover transition-smooth"
               >
                 <Download className="mr-2" size={20} />
                 Download Resume
               </Button>
+              </a>
               <Button
                 size="lg"
                 variant="outline"

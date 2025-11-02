@@ -1,6 +1,16 @@
-import { Code2, Brain, BarChart3, Cog } from "lucide-react";
+import React from "react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Code2, Brain, BarChart3, Cog } from "lucide-react";
+import {
+  SiPandas,
+  SiNumpy,
+  SiKeras,
+  SiMlflow,
+  SiJupyter,
+  SiLinux,
+  SiPostman,
+} from "react-icons/si";
 
 const Skills = () => {
   const skillCategories = [
@@ -30,19 +40,35 @@ const Skills = () => {
     },
   ];
 
+  const familiarSkills = [
+    { icon: SiPandas, name: "Pandas" },
+    { icon: SiNumpy, name: "NumPy" },
+    { icon: SiKeras, name: "Keras" },
+    { icon: SiMlflow, name: "MLflow" },
+    { icon: SiJupyter, name: "Jupyter" },
+    { icon: SiLinux, name: "Linux" },
+    { icon: SiPostman, name: "REST APIs" },
+  ];
+
   return (
     <section id="skills" className="section-padding">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in">
+        {/* Title */}
+        <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Technical <span className="bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">Skills</span>
+            Technical{" "}
+            <span className="bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
+              Skills
+            </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive toolkit for data science and machine learning projects
+            A comprehensive toolkit for data science and machine learning
+            projects
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Main skill categories */}
+  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           {skillCategories.map((category, index) => (
             <Card
               key={index}
@@ -50,12 +76,14 @@ const Skills = () => {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="space-y-4">
-                <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${category.color} p-3 group-hover:scale-110 transition-smooth`}>
+                <div
+                  className={`w-14 h-14 rounded-xl bg-gradient-to-br ${category.color} p-3 group-hover:scale-110 transition-smooth`}
+                >
                   <category.icon className="w-full h-full text-white" />
                 </div>
-                
+
                 <h3 className="text-xl font-semibold">{category.title}</h3>
-                
+
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIndex) => (
                     <Badge
@@ -72,17 +100,18 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Additional Skills */}
+        {/* Familiar tools section */}
         <div className="mt-12 text-center">
           <p className="text-muted-foreground mb-4">Also familiar with:</p>
           <div className="flex flex-wrap justify-center gap-3">
-            {["Pandas", "NumPy", "Keras", "MLflow", "Jupyter", "VS Code", "Linux", "REST APIs"].map((skill, index) => (
+            {familiarSkills.map(({ icon: Icon, name }, index) => (
               <Badge
                 key={index}
                 variant="outline"
-                className="border-primary/30 text-foreground/80 hover:bg-primary hover:text-primary-foreground transition-smooth"
+                title={name}
+                className="border-primary/30 text-foreground/70 hover:bg-primary hover:text-primary-foreground transition-smooth p-2 text-2xl"
               >
-                {skill}
+                <Icon className="w-6 h-6" />
               </Badge>
             ))}
           </div>

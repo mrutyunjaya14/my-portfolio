@@ -6,20 +6,20 @@ const About = () => {
   const timeline = [
     {
       icon: GraduationCap,
-      year: "2018 - 2022",
-      title: "B.Tech in Computer Science",
+      year: "2021 - 2024",
+      title: "Bsc in Computer Science",
       description: "Specialized in Data Science and Machine Learning",
     },
+    // {
+    //   icon: Briefcase,
+    //   year: "2022 - 2023",
+    //   title: "Junior Data Analyst",
+    //   description: "Built dashboards and performed data analysis for business insights",
+    // },
     {
-      icon: Briefcase,
-      year: "2022 - 2023",
-      title: "Junior Data Analyst",
-      description: "Built dashboards and performed data analysis for business insights",
-    },
-    {
-      icon: Award,
-      year: "2023 - Present",
-      title: "Data Scientist",
+      icon: GraduationCap,
+      year: "2025 - Present",
+      title: "Master Of Computer Application",
       description: "Developing ML models and leading analytics projects",
     },
   ];
@@ -27,7 +27,7 @@ const About = () => {
   return (
     <section id="about" className="section-padding bg-secondary/30">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             About <span className="bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">Me</span>
           </h2>
@@ -36,7 +36,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
+  <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Bio */}
           <div className="space-y-6 animate-slide-in-left">
             <h3 className="text-2xl font-semibold">Who I Am</h3>
@@ -47,10 +47,13 @@ const About = () => {
               My approach combines technical expertise with business acumen, ensuring that analytical solutions align with organizational goals. I thrive on solving complex problems and communicating findings in clear, impactful ways.
             </p>
             <div className="flex gap-4">
+              <a href="/public/Mrutyunjaya_Beura_2Page_CV.pdf" download>
               <Button className="bg-primary hover:bg-primary-dark">
                 <Download className="mr-2" size={18} />
                 Download CV
+                
               </Button>
+              </a>
             </div>
           </div>
 
