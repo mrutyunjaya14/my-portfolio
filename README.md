@@ -1,73 +1,140 @@
-# Welcome to your Lovable project
+
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/376d92e8-f951-4088-aa16-5975d91c4d98
+**URL**: (https://mrutyunjaya14.github.io/my-portfolio/)
 
-## How can I edit this code?
+🌟 Mrutyunjaya Beura — Data Science Portfolio
 
-There are several ways of editing your application.
+**👋 About Me**
 
-**Use Lovable**
+Hi, I’m Mrutyunjaya Beura — a passionate Data Science and Machine Learning enthusiast.
+I love turning data into meaningful insights and building interactive web apps that bring those insights to life.
+This portfolio showcases my skills, projects, and professional journey in the world of Data Science.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/376d92e8-f951-4088-aa16-5975d91c4d98) and start prompting.
+📧 Email: mrutyunjayabeura2004@gmail.com
 
-Changes made via Lovable will be committed automatically to this repo.
+💼 LinkedIn: https://linkedin.com/in/mrutyunjaya-beura-699631336
 
-**Use your preferred IDE**
+💻 GitHub: https://github.com/mrutyunjaya14
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🌐 Live Portfolio: https://mrutyunjaya14.github.io/my-portfolio
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Follow these steps:
+## 🚀 Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+| Category               | Technologies                           |
+| ---------------------- | -------------------------------------- |
+| **Frontend**           | React 18, TypeScript, Vite             |
+| **Styling**            | Tailwind CSS, shadcn/ui, Framer Motion |
+| **Data & Logic**       | TanStack Query, React Hook Form, Zod   |
+| **Icons & Animations** | Lucide React, React Icons              |
+| **Deployment**         | GitHub Pages (via gh-pages)            |
+| **Version Control**    | Git & GitHub                           |
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+**💡 Features**
+
+✨ Fully responsive, mobile-friendly design
+🎨 Elegant UI with shadcn/ui and Framer Motion animations
+🧠 Showcases technical skills & data science projects
+📩 Contact form integrated with EmailJS
+🌙 Light & Dark theme support
+⚙️ Easy to maintain and update content
+🚀 Deployed seamlessly using GitHub Pages
+
+
+**🧠 Portfolio Sections**
+
+Hero Section: Introduction and call to action
+
+About Me: Professional summary and goals
+
+Skills: Categorized tech stack with icons
+
+Projects: Interactive project cards with live demos & GitHub links
+
+Contact: Form and social media integration
+
+Footer: Built with ❤️ by Mrutyunjaya Beura
+
+
+## 🧩 Project Structure
+
+The project follows a clean and modular folder structure for scalability and easy maintenance.
+
+```bash
+my-portfolio/
+├── public/                  # Static files like favicon, robots.txt, etc.
+├── src/
+│   ├── assets/              # Images, icons, and other static media
+│   ├── components/          # Reusable UI components (Navbar, Footer, Cards, etc.)
+│   ├── pages/               # Page-level components (Home, Skills, Projects, Contact)
+│   ├── hooks/               # Custom React hooks
+│   ├── styles/              # Global styles or Tailwind extensions
+│   ├── App.tsx              # Main application component and routes
+│   ├── main.tsx             # Entry point for the app
+│   └── vite-env.d.ts        # TypeScript environment definitions
+├── .gitignore               # Files and folders ignored by Git
+├── package.json             # Scripts and dependencies
+├── postcss.config.js        # Tailwind & PostCSS configuration
+├── tailwind.config.js       # Tailwind CSS customization
+├── tsconfig.json            # TypeScript configuration
+├── vite.config.ts           # Vite configuration (with GitHub Pages base path)
+└── README.md                # Project documentation (this file)
+
+```
+## ⚙️ Setup and Installation
+
+**🪄 Clone the Repository**
+```bash
+git clone https://github.com/mrutyunjaya14/my-portfolio.git
+cd my-portfolio
+```
+**📦 Install Dependencies**
+```bash
+npm install
+```
+
+**🧑‍💻 Start Development Server**
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Your site will be available at:
+👉 http://localhost:5173
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
 
-**Use GitHub Codespaces**
+## 💬 Contact
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+If you’d like to connect, collaborate, or discuss data science — feel free to reach out!
 
-## What technologies are used for this project?
+📧 Email: https://mrutyunjayabeura2004@gmail.com
 
-This project is built with:
+💼 LinkedIn: https://linkedin.com/in/mrutyunjaya-beura-699631336
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+💻 GitHub: https://github.com/mrutyunjaya14
 
-## How can I deploy this project?
+## 🧭 Future Enhancements
 
-Simply open [Lovable](https://lovable.dev/projects/376d92e8-f951-4088-aa16-5975d91c4d98) and click on Share -> Publish.
+📰 Add blog section for data science articles
 
-## Can I connect a custom domain to my Lovable project?
+🧠 Integrate AI-powered chatbot assistant
 
-Yes, you can!
+💾 Connect backend (Node.js or Flask)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+🎯 Add project filtering & tagging features
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+📄 Add downloadable resume in the site
+
+
+
+## ❤️ Credits
+
+“Built with curiosity, creativity, and code.”
+
+Developed & Designed by Mrutyunjaya Beura
+Made with ❤️ using React + Vite + TailwindCSS
+
